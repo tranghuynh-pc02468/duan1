@@ -1,0 +1,23 @@
+<div class="row mb10 titlead">
+            <h2>THÊM MỚI LOẠI HÀNG HÓA</h2>   
+        </div>
+
+        <div class="row  form-admin">
+            <form action="#" method="post">
+                <div class="row mb10">
+                    Mã loại <br>
+                    <input type="text" name="maloai" id="" disabled>
+                </div>
+                <div class="row mb10">
+                    Tên loại <br>
+                    <input type="text" name="tenloai" id="">
+                </div>
+                <div class="row mb10">
+                    <input type="submit" value="Thêm mới">
+                    <input type="reset" value="Nhập lại">
+                    
+                    <a href="dsloaihang.html"><input type="button" value="Danh sách"></a>
+                </div>
+                
+            </form>
+        </div>
