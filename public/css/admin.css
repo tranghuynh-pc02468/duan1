@@ -3,15 +3,15 @@
     font-family: sans-serif;
     
 }
-.container{
+/* .container{
     width: 70%;
     margin: 0 auto;
-}
+} */
 
 .row{
-    width: 100%;
+    width: 70%;
     float: left;
-    
+    margin-left: 15%;
 }
 .mb{
     margin-bottom: 20px;
@@ -22,121 +22,6 @@
 .mr{
     margin-right: 2%;
 }
-.demo{
-    background-color: antiquewhite;
-    min-height: 80px;
-}
-.header{
-    background-color: aquamarine;
-    border: 1px #090 solid;
-    font-size: 1vw; /* chữ co giãn theo trình duyệt */
-    color: blue;
-    border-radius: 5px;
-}
-.header h1{
-    margin: 20px 20px;
-}
-
-.menu{
-    background-color: black;
-    color: #ccc;
-    border-radius: 5px;
-}
-.menu ul{
-    padding: 0px 15px;
-    
-}
-.menu ul li{
-    list-style: none;
-    display: inline;
-    padding: 0px 15px;
-}
-.menu ul li a{
-    color: #ccc;
-    text-decoration: none;
-    transition: 0.5s;
-}
-.menu ul li a:hover{
-    color: white;
-    font-size: 20px;
-}
-
-
-
-.boxphai{
-    float: left;
-    width: 24%;
-}
-
-.boxtrai{
-    float: left;
-    width: 74%;
-}
-.title{
-    background-color: #eee;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border: 1px #ccc solid;
-    color: black;
-    padding: 10px;
-}
-.content{
-    border-left: 1px #ccc solid;
-    border-right: 1px #ccc solid;
-    border-bottom: 1px #ccc solid;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    min-height: 200px;
-    padding: 20px;
-    min-height: 200px;
-}
-.content1{
-    border-left: 1px #ccc solid;
-    border-right: 1px #ccc solid;  
-    min-height: 200px;
-
-}
-.find{
-    background-color: #eee;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border: 1px #ccc solid;
-    padding: 10px;
-}
-.banner{
-    min-height: 300px;
-    width: 100%;
-    text-align: center;
-}
-.banner img{
-    height: 300px;
-}
-.sp{
-    width: 32%;
-    float: left;
-    min-height: 300px;
-    border: 1px #eee solid;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
-.sp .img{
-    min-height: 250px;
-    text-align: center;
-    
-}
-.img img{  
-    height: 220px;
-}
-.footer{
-    background-color: aquamarine;
-    border: 1px #090 solid;
-    font-size: 20px; /* chữ co giãn theo trình duyệt */
-    color: blue;
-    border-radius: 5px;
-    padding: 10px;
-}
-
 
 .formtk{
     line-height: 150%;
@@ -182,54 +67,19 @@
     color: blue;
     text-decoration: none;
 }
-.menudm ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-   
-}
-.menudm ul li{
-    padding: 10px 15px;
-    border-bottom: 1px #ccc solid;
-
-   
-}
-.menudm ul li a{
-    text-decoration: none;
-    color: rgb(69, 68, 68);
-}
-.menudm ul li:hover {
-    background-color: rgb(222, 216, 216);
-}
-.find input[type="text"] {
-    width: 100%;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px #ccc solid;
-}
-.top10 img{
-    width: 20%;   
-    margin-right: 10px;
-    float: left;
-    border-radius: 5px;
-    border: 1px #ccc solid;
-}
-.top10 a{
-    color: rgb(69, 68, 68);
-    text-decoration: none;
-}
-.top10 a:hover{
-    text-decoration: underline;
-}
-
 /*trang admin*/
 .titlead{
+    margin-top: 150px;
     background-color: #eee;
     border: 1px #ccc solid;
     border-radius: 5px;
     color: rgb(85, 102, 215);
-    padding: 0px 10px;
-    font-size: 0.8vw;
+    font-size: 1vw;
+    width: 70%;
+    margin-left: 15%;
+}
+.titlead h2{
+    padding: 10px;
 }
 .content-admin{
     padding: 20px 0px;

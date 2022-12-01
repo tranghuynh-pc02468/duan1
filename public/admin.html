@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneaker Store - Trang chủ</title>
+    <title>Sneaker Store - admin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/admin.css">
 </head>
 <body>
     <div class="container ">
@@ -39,12 +40,69 @@
             </form>
         </div>
 
+        <div class="titlead mb10">
+            <h2>QUẢN LÝ LOẠI HÀNG</h2>   
+        </div>
+        <div class="row  form-admin">
+            <div class="row mb10 dsloai">
+                <table >
+                    <tr>
+                        <th></th>
+                        <th>MÃ LOẠI</th>
+                        <th>TÊN LOẠI</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>001</td>
+                        <td>Đồng hồ</td>
+                        <td><input type="button" value="Sửa"><input type="button" value="Xóa"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>002</td>
+                        <td>Laptop</td>
+                        <td><input type="button" value="Sửa"><input type="button" value="Xóa"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>003</td>
+                        <td>Đồng hồ</td>
+                        <td><input type="button" value="Sửa"><input type="button" value="Xóa"></td>
+                    </tr>
+                </table>
+            </div>
 
 
 
+            <div class="row mb10">
+                <input type="button" name="" id="" value="Chọn tất cả">
+                <input type="button" name="" id="" value="Bỏ Chọn tất cả">
+                <input type="button" name="" id="" value="Xóa các mục đã chọn">    
+                <a href="admin.html"><input type="button" value="Nhập thêm"></a>
+            </div>
+        </div>
 
 
 
+        <div class="footer">
+            <div class="footerlelt">
+                <img src="./image/logo.png" alt=""> <br>
+                <a href="#">Về chúng tôi</a>
+            </div>
+            <div class="footerright">
+                <h2>Thông tin liên hệ</h2>
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    135E, Mậu Thân, An Hòa, Ninh Kiều, TP.Cần Thơ
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    0799324983
+                </div>
+            </div>
+            
+        </div>
     </div>
 </body>
 </html>

@@ -1,25 +1,47 @@
-<?php
-    include "../model/pdo.php";
+<?php 
+include "../model/pdo.php";
 
-    include "header.php"; 
+    include "header.php";
 
-    //controller
     if(isset($_GET['act'])){
         $act = $_GET['act'];
         switch ($act) {
             case 'adddm':
-                //kt có click 
                 if(isset($_POST['themmoi'])){
                     $tenloai = $_POST['tenloai'];
-                    $sql = "INSERT INTO danhmuc(name) 
-                            values('$tenloai')";
-                   return pdo_execute($sql);
-                    $thongbao = "thêm thành công";
+                   $sql = "INSERT INTO loaihang(tenloai) VALUES('$tenloai')";
+                   pdo_execute($sql);
+                   $thongbao="thành công";
                 }
-                                
                 include "danhmuc/add.php";
                 break;
+            case 'list':
+                $sql="SELECT * FROM loaihang order by maloai";
+                $listdm=pdo_query($sql);
+                include "danhmuc/list.php";
+                break;
+            case 'xoadm':
+                if(isset($_GET['maloai'])){
+                    $sql="delete FROM loaihang where maloai= ".$_GET['maloai'];
+                    pdo_query($sql);
+                }
+                $sql="SELECT * FROM loaihang order by maloai";
+                $listdm=pdo_query($sql);
+                include "danhmuc/list.php";
+                break;
+
+
+
             case 'addsp':
+                if(isset($_POST['themmoi'])){
+                    $tensp = $_POST['tensp'];
+                    $gia = $_POST['gia'];
+                    $hinhanh = $_POST['hinhanh'];
+                    $mota = $_POST['mota'];
+                   $sql = "INSERT INTO sanpham(tensp, gia, hinhanh, mota) VALUES('$tensp,$gia,$hinhanh,$mota')";
+                   pdo_execute($sql);
+                   $thongbao="thành công";
+                }
                 include "sanpham/add.php";
                 break;
 
@@ -28,14 +50,11 @@
                 include "home.php";
                 break;
         }
-    }else{
-        include "home.php";
     }
+else{
+    include "home.php";
+}
 
-
-
-
-   
 
     include "footer.php";
 
