@@ -1,5 +1,4 @@
-<h1>home</h1>
-<!-- 
+
  <div class="titlead mb10">
             <h2>QUẢN LÝ LOẠI HÀNG</h2>   
         </div>
@@ -41,4 +40,4 @@
                 <input type="button" name="" id="" value="Xóa các mục đã chọn">    
                 <a href="admin.html"><input type="button" value="Nhập thêm"></a>
             </div>
-        </div> --> 
+        </div>  
