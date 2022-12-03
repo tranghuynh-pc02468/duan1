@@ -23,7 +23,7 @@ include "../model/pdo.php";
             case 'xoadm':
                 if(isset($_GET['maloai'])){
                     $sql="delete FROM loaihang where maloai= ".$_GET['maloai'];
-                    pdo_query($sql);
+                    pdo_execute($sql);
                 }
                 $sql="SELECT * FROM loaihang order by maloai";
                 $listdm=pdo_query($sql);
@@ -49,19 +49,35 @@ include "../model/pdo.php";
                 include "danhmuc/list.php";
                 break;
 
-
+//sản phẩm
             case 'addsp':
                 if(isset($_POST['themmoi'])){
+                    $maloai = $_POST['maloai'];
                     $tensp = $_POST['tensp'];
                     $gia = $_POST['gia'];
-                    $hinhanh = $_POST['hinhanh'];
                     $mota = $_POST['mota'];
-                   $sql = "INSERT INTO sanpham(tensp, gia, hinhanh, mota) VALUES('$tensp,$gia,$hinhanh,$mota')";
+                    $hinhanh = $_FILES['hinhanh']['name'];
+                    $target_dir = "../upload/";
+                    $target_file = $target_dir . basename($_FILES["hinhanh"]["name"]);
+                    if (move_uploaded_file($_FILES["hinhanh"]["tmp_name"], $target_file)) {
+                       // echo "The file ". htmlspecialchars( basename( $_FILES["hinhanh"]["name"])). " has been uploaded.";
+                       } //else {
+                    //     echo "Sorry, there was an error uploading your file.";
+                    //   }
+
+                   $sql = "INSERT INTO sanpham(tensp, gia, hinhanh, mota, maloai) 
+                            VALUES('$tensp','$gia','$hinhanh','$mota','$maloai')";
                    pdo_execute($sql);
                    $thongbao="thành công";
                 }
+                $sql="SELECT * FROM loaihang order by maloai";
+                $listdm=pdo_query($sql);
                 include "sanpham/add.php";
                 break;
+            
+            
+
+
 
 
             default:
