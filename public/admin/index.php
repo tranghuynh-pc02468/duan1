@@ -75,14 +75,22 @@ include "../model/pdo.php";
                 include "sanpham/add.php";
                 break;
             
-                case 'listsp':
+            case 'listsp':
+                $sql="SELECT * FROM sanpham order by masp";
+                $listsp=pdo_query($sql);
+                include "sanpham/list.php";
+                break;
+                
+                case 'xoasp':
+                    if(isset($_GET['masp'])){
+                        $sql="delete FROM sanpham where masp= ".$_GET['masp'];
+                        pdo_execute($sql);
+                    }
                     $sql="SELECT * FROM sanpham order by masp";
                     $listsp=pdo_query($sql);
                     include "sanpham/list.php";
                     break;
                 
-
-
 
 
             default:
