@@ -5,15 +5,15 @@
 
     <div class="row  form-admin">
         <form action="index.php?act=adddm" method="post">
-            <div class="row mb10">
+            <div class="mb10">
                 Mã loại <br>
                 <input type="text" name="maloai" id="" disabled>
             </div>
-            <div class="row mb10">
+            <div class="mb10">
                 Tên loại <br>
                 <input type="text" name="tenloai" id="">
             </div>
-            <div class="row mb10">
+            <div class="mb10">
                 <input type="submit" value="Thêm mới" name="themmoi">
                 <input type="reset" value="Nhập lại">
 
@@ -28,5 +28,4 @@
 
         </form>
     </div>
-</div>
 </div>
