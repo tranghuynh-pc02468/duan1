@@ -29,7 +29,25 @@ include "../model/pdo.php";
                 $listdm=pdo_query($sql);
                 include "danhmuc/list.php";
                 break;
-
+            case 'suadm':
+                if(isset($_GET['maloai'])){
+                $sql = "SELECT * FROM loaihang where maloai= ".$_GET['maloai'];
+                $updatedm = pdo_query_one($sql);
+                }
+                include "danhmuc/update.php";
+                break;
+            case 'updatedm':
+                if(isset($_POST['capnhat'])){
+                    $tenloai = $_POST['tenloai'];
+                    $maloai = $_POST['maloai'];
+                   $sql = "UPDATE loaihang SET tenloai='".$tenloai."' WHERE maloai=" .$maloai;
+                   pdo_execute($sql);
+                   $thongbao="cập nhật thành công";
+                }
+                $sql="SELECT * FROM loaihang order by maloai";
+                $listdm=pdo_query($sql);
+                include "danhmuc/list.php";
+                break;
 
 
             case 'addsp':
