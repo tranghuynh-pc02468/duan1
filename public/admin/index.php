@@ -75,7 +75,12 @@ include "../model/pdo.php";
                 include "sanpham/add.php";
                 break;
             
-            
+                case 'listsp':
+                    $sql="SELECT * FROM sanpham order by masp";
+                    $listsp=pdo_query($sql);
+                    include "sanpham/list.php";
+                    break;
+                
 
 
 
