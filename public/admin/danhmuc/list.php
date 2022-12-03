@@ -1,4 +1,5 @@
-<div class="row mb10 titlead">
+<div class="row">
+        <div class="mb10 titlead">
             <h2>QUẢN LÝ LOẠI HÀNG</h2>   
         </div>
 
@@ -14,7 +15,7 @@
                     <?php
                     foreach($listdm as $danhmuc){
                         extract($danhmuc);
-                        $suadm = "index.php?act=suadm".$maloai;
+                        $suadm = "index.php?act=suadm&maloai=".$maloai;
                         $xoadm = "index.php?act=xoadm&maloai=".$maloai;
                         echo '<tr>
                         <td><input type="checkbox" name="" id=""></td>
@@ -37,3 +38,6 @@
                 <input type="button" name="" id="" value="Xóa các mục đã chọn">    
                 <a href="index.php?act=adddm"><input type="button" value="Nhập thêm"></a>
             </div>
+                
+        </div>
+                </div>
