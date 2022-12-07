@@ -64,6 +64,9 @@
 .menu1 >ul >li>a:hover{
     color: red;
 }
+.menu1 ul li a:active{
+    color:red;
+}
  .menu1> ul ul{
     padding: 0px;
     margin: 0px;
@@ -137,8 +140,12 @@
 
 
 .new{
-    width: 100%;
+    /* width: 100%; */
     min-height: 500px;
+    width: 1300px;
+    /* height: 1200px; */
+  
+    margin-left: 150px;
 }
 .new h2{
     font-family: sans-serif;
@@ -203,9 +210,6 @@
 
 
 
-
-
-
 .banner2{
     width: 100%;
     float: left;
@@ -221,7 +225,7 @@
     width: 1300px;
     height: 1200px;
     /* box-shadow: 0 0 5px red; */
-    margin: 700px 100px 100px 100px;
+    margin: 700px 100px 100px 150px;
 }
 .best h2{
     font-family: sans-serif;
