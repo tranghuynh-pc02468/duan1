@@ -3,7 +3,7 @@
             <h2>QUẢN LÝ LOẠI HÀNG</h2>   
         </div>
 
-        <div class="row  form-admin">
+        <div class=" form-admin">
             <div class="row mb10 dsloai">
                 <table >
                     <tr>
