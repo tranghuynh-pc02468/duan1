@@ -1,4 +1,8 @@
-   <!-- sản phẩm mới -->
+<div class="banner1">
+            <img src="./image/banner.jpg" alt="">
+        </div>
+  
+  <!-- sản phẩm mới -->
    <div class="row">
             <div class="new">
                 <h2>Mới nhất</h2>

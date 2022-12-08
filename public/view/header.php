@@ -10,13 +10,10 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <link rel="stylesheet" href="./css/style1.css">
+<link rel="stylesheet" href="./css/chitiet.css">
 </head>
 <body>
     <div class="container ">
-        
-        <div class="banner1">
-            <img src="./image/banner.jpg" alt="">
-        </div>
 
     <!-- menu -->
         <div class="menu ">
@@ -27,13 +24,13 @@
                 <ul>
                     <li><a href="index.php">Trang chủ</a></li>
                     <li><a href="index.php?act=sanpham">Sản phẩm</a>
-                        <ul>
-                            <li><a href="">Air Force 1</a></li>
+                        <!-- <ul>
+                             <li><a href="">Air Force 1</a></li>
                             <li><a href="">Bóng đá</a></li>
                             <li><a href="">Bóng rổ</a></li>
                             <li><a href="">Jordan</a></li>
-                            <li><a href="">Khác</a></li>
-                        </ul>
+                            <li><a href="">Khác</a></li> 
+                        </ul> -->
                     </li>
                     <li><a href="index.php?act=lienhe">Liên hệ</a></li>
                 </ul>
