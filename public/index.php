@@ -2,9 +2,12 @@
 include "model/pdo.php"; //kết nối database
 include "view/header.php";
 include "model/function_sanpham.php";
+include "model/function_danhmuc.php";
 $img = "upload/";
 
-$spnew=list_sp_new();
+$spnew=list_sp_new(); //sp mới
+$sp=list_sp();      //sp trang sp
+$dsdm=listall_dm();
 
 if(isset($_GET['act'])){
     $act = $_GET['act'];
@@ -15,8 +18,19 @@ if(isset($_GET['act'])){
         case 'gioithieu':
             include "view/gioithieu.php";
             break;
-        
+        case 'sanpham':
+            include "view/sanpham.php";
+            break;
+        case 'spchitiet':
+            if(isset($_GET['masp'])){
+                $listone=listone_sp($masp);
+                include "view/spchitiet.php";
+            }else{
+                include "view/spchitiet.php";
+            }
+
             
+            break;   
 
 
 
