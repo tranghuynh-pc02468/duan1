@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneaker Store - admin</title>
+    <title>Sneaker Store - Trang chủ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
- <link rel="stylesheet" href="../css/style1.css">
- <link rel="stylesheet" href="../css/admin1.css">
+<link rel="stylesheet" href="./css/style1.css">
+<link rel="stylesheet" href="./css/chitiet.css">
 </head>
 <body>
     <div class="container ">
-        
-    <!--thanh menu -->
+
+    <!-- menu -->
         <div class="menu ">
             <div class="logo">
-                <img src="../image/logo.png" alt="">
+                <img src="./image/logo.png" alt="">
             </div>
             <div class="menu1">
                 <ul>
                     <li><a href="index.php">Trang chủ</a></li>
-                    <li><a href="index.php?act=adddm">Danh mục</a></li>
-                    <li><a href="index.php?act=addsp">Sản phẩm</a></li>
-                    <li><a href="index.php?act=dskh">Khách hàng</a></li>
-                    <li><a href="index.php?act=thongke">Thống kê</a></li>
+                    <li><a href="index.php?act=sanpham">Sản phẩm</a>
+                        <!-- <ul>
+                             <li><a href="">Air Force 1</a></li>
+                            <li><a href="">Bóng đá</a></li>
+                            <li><a href="">Bóng rổ</a></li>
+                            <li><a href="">Jordan</a></li>
+                            <li><a href="">Khác</a></li> 
+                        </ul> -->
+                    </li>
+                    <li><a href="index.php?act=lienhe">Liên hệ</a></li>
                 </ul>
             </div>
             <div class="menu2">

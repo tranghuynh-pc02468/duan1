@@ -37,6 +37,7 @@
     /* background-color: rgba(254, 251, 251, 0.5); */
     height: 130px;
     margin: 0;
+    box-shadow: 0 0 10px gray;
 }
 
 .menu1>ul{
@@ -62,6 +63,9 @@
 }
 .menu1 >ul >li>a:hover{
     color: red;
+}
+.menu1 ul li a:active{
+    color:red;
 }
  .menu1> ul ul{
     padding: 0px;
@@ -124,8 +128,6 @@
    width: 20%;
    padding: 10px;
    font-size: 16px;
-    
-   
    background-color:rgba(255, 0, 0, 0) ; 
     color: black;
     border: 1px solid grey;
@@ -138,8 +140,12 @@
 
 
 .new{
-    width: 100%;
+    /* width: 100%; */
     min-height: 500px;
+    width: 1300px;
+    /* height: 1200px; */
+  
+    margin-left: 150px;
 }
 .new h2{
     font-family: sans-serif;
@@ -204,9 +210,6 @@
 
 
 
-
-
-
 .banner2{
     width: 100%;
     float: left;
@@ -222,7 +225,7 @@
     width: 1300px;
     height: 1200px;
     /* box-shadow: 0 0 5px red; */
-    margin: 700px 100px 100px 100px;
+    margin: 700px 100px 100px 150px;
 }
 .best h2{
     font-family: sans-serif;
@@ -233,11 +236,12 @@
 
 
 .footer{
-    background-color: #ccc;
+    /* background-color: #ccc; */
     width: 100%;
-    min-height: 200px;
+    min-height: 170px;
     clear: both;
-
+    box-shadow: 0 0 10px gray;
+   
 }
 .footer .footerlelt{
     width: 50%;
@@ -318,10 +322,6 @@
     color: red;
     border-bottom: 2px solid red;
 }
-
-
-
-
 
 
 
