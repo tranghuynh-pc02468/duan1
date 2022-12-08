@@ -2,54 +2,24 @@
    <div class="row">
             <div class="new">
                 <h2>Mới nhất</h2>
-            <div class="col-25 ">
-                <div class="prod">
-                    <img class="image" src="./image/af3.png" alt="IMG">
-                    <div class="name">Air force 1</div>
-                    <div class="price">1.300.000</div>
-                    <input type="submit" value="Chi tiết">
+                <?php
+            
+            foreach ($spnew as $sanpham) {
+                extract($sanpham);
+                $hinh=$img.$hinhanh;
+                echo '
+                <div class="col-25 ">
+                    <div class="prod">
+                        <img class="image" src="'.$hinh.'" alt="IMG">
+                        <div class="name">'.$tensp.'</div>
+                        <input type="submit" value="Chi tiết ">
+                        <div class="price">'.$gia.'</div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-25 ">
-                <div class="prod">
-                    <img class="image" src="./image/af3.png" alt="IMG">
-                    <div class="name">Air force 1</div>
-                    <div class="price">1.300.000</div>
-                    <input type="submit" value="Chi tiết">
-                </div>
-            </div>
-            <div class="col-25 ">
-                <div class="prod">
-                    <img class="image" src="./image/af3.png" alt="IMG">
-                    <div class="name">Air force 1</div>
-                    <div class="price">1.300.000</div>
-                    <input type="submit" value="Chi tiết">
-                </div>
-            </div>
-            <div class="col-25 ">
-                <div class="prod">
-                    <img class="image" src="./image/af3.png" alt="IMG">
-                    <div class="name">Air force 1</div>
-                    <div class="price">1.300.000</div>
-                    <input type="submit" value="Chi tiết">
-                </div>
-            </div>
-            <div class="col-25 ">
-                <div class="prod">
-                    <img class="image" src="./image/af3.png" alt="IMG">
-                    <div class="name">Air force 1</div>
-                    <div class="price">1.300.000</div>
-                    <input type="submit" value="Chi tiết">
-                </div>
-            </div>
-            <div class="col-25 ">
-                <div class="prod">
-                    <img class="image" src="./image/af3.png" alt="IMG">
-                    <div class="name">Air force 1</div>
-                    <div class="price">1.300.000</div>
-                    <input type="submit" value="Chi tiết">
-                </div>
-            </div>
+                ';
+            }
+
+        ?>
             
 
                 
@@ -77,53 +47,23 @@
     <div class="row">
         <div class="best">
             <h2>Bán chạy</h2>
-            <div class="col-25 ">
-                <div class="prod">
-                    <img class="image" src="./image/af3.png" alt="IMG">
-                    <div class="name">Air force 1</div>
-                    <div class="price">1.300.000</div>
-                    <input type="submit" value="Chi tiết">
+            <?php
+            
+            foreach ($spnew as $sanpham) {
+                extract($sanpham);
+                $hinh=$img.$hinhanh;
+                echo '
+                <div class="col-25 ">
+                    <div class="prod">
+                        <img class="image" src="'.$hinh.'" alt="IMG">
+                        <div class="name">'.$tensp.'</div>
+                        <input type="submit" value="Chi tiết ">
+                        <div class="price">'.$gia.'</div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-25 ">
-                <div class="prod">
-                    <img class="image" src="./image/af3.png" alt="IMG">
-                    <div class="name">Air force 1</div>
-                    <div class="price">1.300.000</div>
-                    <input type="submit" value="Chi tiết">
-                </div>
-            </div>
-            <div class="col-25 ">
-                <div class="prod">
-                    <img class="image" src="./image/af3.png" alt="IMG">
-                    <div class="name">Air force 1</div>
-                    <div class="price">1.300.000</div>
-                    <input type="submit" value="Chi tiết">
-                </div>
-            </div>
-            <div class="col-25 ">
-                <div class="prod">
-                    <img class="image" src="./image/af3.png" alt="IMG">
-                    <div class="name">Air force 1</div>
-                    <div class="price">1.300.000</div>
-                    <input type="submit" value="Chi tiết">
-                </div>
-            </div>
-            <div class="col-25 ">
-                <div class="prod">
-                    <img class="image" src="./image/af3.png" alt="IMG">
-                    <div class="name">Air force 1</div>
-                    <div class="price">1.300.000</div>
-                    <input type="submit" value="Chi tiết">
-                </div>
-            </div>
-            <div class="col-25 ">
-                <div class="prod">
-                    <img class="image" src="./image/af3.png" alt="IMG">
-                    <div class="name">Air force 1</div>
-                    <div class="price">1.300.000</div>
-                    <input type="submit" value="Chi tiết">
-                </div>
-            </div>
+                ';
+            }
+
+        ?>
         </div>
     </div>
