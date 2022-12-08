@@ -37,10 +37,24 @@
 
 
 
-
+// load sp lên sản phẩm mới
     function list_sp_new(){
         $sql= "SELECT * FROM sanpham where 1 order by masp desc limit 0,6";
         $listsp=pdo_query($sql);
         return $listsp;
     }
+// load sp lên trang sanpham
+    function list_sp(){
+        $sql= "SELECT * FROM sanpham where 1 order by masp desc limit 0,9";
+        $listsp=pdo_query($sql);
+        return $listsp;
+    }
+
+    function list_sp_lienquan($masp){
+        $sql = "SELECT * FROM sanpham where masp <>".$masp;
+        $sp = pdo_query($sql);
+        return $sp;
+    }
+
+
 ?>
