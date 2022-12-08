@@ -5,7 +5,7 @@
     }
 
     function listall_dm(){
-        $sql="SELECT * FROM loaihang order by maloai";
+        $sql="SELECT * FROM loaihang order by maloai desc";
         $listdm=pdo_query($sql);
         return $listdm;
     }
