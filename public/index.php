@@ -22,16 +22,23 @@ if(isset($_GET['act'])){
             include "view/sanpham.php";
             break;
         case 'spchitiet':
-            if(isset($_GET['masp'])){
-                $listone=listone_sp($masp);
-                include "view/spchitiet.php";
-            }else{
-                include "view/spchitiet.php";
+                if(isset($_GET['masp'])){
+                    $masp = $_GET['masp'];
+                    $listone=listone_sp($masp);
+                    extract($listone);
+                    $splienquan=list_sp_lienquan($masp,$maloai);
+                    include "view/spchitiet.php";
+                }else{
+                    include "view/home.php";
+                }              
+                break;   
+        case 'spcungloai':
+            if(isset($_GET['maloai'])){
+                $maloai = $_GET['maloai'];
+                $listsp=list_sp_cungloai("",$maloai);
+                include "view/spcungloai.php";
             }
-
-            
-            break;   
-
+            break;
 
 
 
