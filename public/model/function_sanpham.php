@@ -50,10 +50,25 @@
         return $listsp;
     }
 
-    function list_sp_lienquan($masp){
-        $sql = "SELECT * FROM sanpham where masp <>".$masp;
+    function list_sp_lienquan($masp,$maloai){
+        $sql = "SELECT * FROM sanpham where maloai='".$maloai."' AND masp <>".$masp;
         $sp = pdo_query($sql);
         return $sp;
+    }
+
+
+//load sp theo từng loại
+    function list_sp_cungloai($kw="",$maloai=0){
+        $sql = "SELECT * FROM sanpham where 1";
+        if($kw!=""){
+            $sql.=" AND tensp like'%".$kw."%'";
+        }
+        if($maloai>0){
+            $sql.=" AND maloai ='".$maloai."'";
+        }
+        $sql.=" order by maloai desc";
+        $listsp = pdo_query($sql);
+        return $listsp;
     }
 
 
