@@ -6,10 +6,11 @@
         $hinh = $img.$hinhanh;
         echo '<div class="col-25 ">
         <div class="prod">
-            <img class="image" src="'.$hinh.'" alt="IMG">
-            <div class="name">'.$tensp.'</div>
-            <div class="price">'.$gia.'</div>
-            <a href="'.$linksp.'"><input type="button" value="Chi tiết"></a>
+        <a href="'.$linksp.'"><img class="image" src="'.$hinh.'" alt="IMG"></a>
+        <a href="'.$linksp.'"><div class="name">'.$tensp.'</div></a>
+        <a href="'.$linksp.'"><div class="price">'.$gia.'</div></a>
+            
+            
         </div>
     </div>';
     }
@@ -71,7 +72,7 @@
                 <?php
                     foreach ($dsdm as $danhmuc) {
                        extract($danhmuc);
-                        $linkdm = "index.php?act=sanpham&maloai=".$maloai;
+                        $linkdm = "index.php?act=spcungloai&maloai=".$maloai;
                        echo '<li><a href="'.$linkdm.'">'.$tenloai.'</a></li>';
 
                     }
