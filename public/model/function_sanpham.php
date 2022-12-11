@@ -58,7 +58,7 @@
 
 
 //load sp theo từng loại
-    function list_sp_cungloai($kw="",$maloai=0){
+    function list_sp_cungloai($kw="",$maloai){
         $sql = "SELECT * FROM sanpham where 1";
         if($kw!=""){
             $sql.=" AND tensp like'%".$kw."%'";

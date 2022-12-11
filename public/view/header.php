@@ -40,8 +40,8 @@
                 &nbsp;
                 <i class="fa-solid fa-user"></i>
             </div>
-            <form class="tkiem">
-                <input type="text" placeholder="Tìm kiếm sản phẩm ..." name="search" >
-                <button type="submit"><i class="fa fa-search"></i></button>
+            <form action="index.php?act=spcungloai" class="tkiem" method="post">
+                <input type="text" placeholder="Tìm kiếm sản phẩm ..." name="kw" >
+                <button type="submit" ><i class="fa fa-search"></i></button>
             </form>
         </div>

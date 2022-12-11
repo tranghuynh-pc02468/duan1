@@ -34,15 +34,19 @@ if(isset($_GET['act'])){
                 break;   
         case 'spcungloai':
             if(isset($_GET['maloai'])){
-                $maloai = $_GET['maloai'];
-                $listsp=list_sp_cungloai("",$maloai);
-                include "view/spcungloai.php";
+                $maloai = $_GET['maloai'];    
+            }else{
+                $maloai="";
             }
+//tìm kiếm
+            if(isset($_POST['kw'])){
+                $kw = $_POST['kw'];
+            }else{
+                $kw="";
+            } 
+            $listsp=list_sp_cungloai($kw,$maloai);
+            include "view/spcungloai.php";
             break;
-
-
-
-
 
         default:
         include "view/home.php";
